@@ -1,0 +1,53 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --luz:#ffffffb2;
+    --sombra:#1f222542;
+    --container:#dde1e7;
+
+  }
+.container {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #dde1e7;
+  }
+  .neu-1 {
+    height: 300px;
+    width: 300px;
+    background: #dde1e7;
+    border-radius: 6px;
+    box-shadow: -3px -3px 7px var(--luz),3px 3px 5px var(--sombra);
+  }
+  .neu-2 {
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    background: #dde1e7;
+    border-radius: 6px;
+    box-shadow: inset -3px -3px 7px var(--luz), inset 3px 3px 5px var(--sombra);
+  }
+  .button-container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--container);
+  }
+  button{
+    padding: 30px;
+    border-radius: 3em;
+    border: none;
+    background-color: var(--container);
+    box-shadow: -3px -3px 7px var(--luz), 3px 3px 5px var(--sombra);
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
