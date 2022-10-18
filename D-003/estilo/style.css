@@ -1,2 +1,145 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+    --cor1:#fff;
+    --cordestaque:#00C669;
+    --corhover:#00c66a86;
+    --corfundo:#1E1E1E;
+    --cortextDark:#787878;
+}
+body{
+    font-family: 'Poppins','sans-serif';
+}
+main{
+    margin: 20px
+}
+header img{
+    padding: 20px;
+}
+#menu-h{
+    padding: 0px;
+    list-style: none;
+    
+} 
+#menu-h ul li{
+    display: inline;
+}
+#menu-h a{
+    margin-top: 24px;
+    padding: 10px;
+    text-decoration: none;
+    color:var(--cor1);
+    display: inline-block;
+}
+#menu-h a:hover{
+    color: var(--cordestaque);
+    transition: color .3s;
+}
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: #fff;
+}
+.sec-01{
+    height:630px;
+    background-image: url('../midia/pedestrian.png');
+    margin:-20px -20px 20px -20px;
+    background-size: cover;
+}
+.sec-01 h1{
+    margin:30px 30px 30px 60px;
+    color: var(--cor1);
+    font-size: 3em;
+    max-width: 500px;
+}
+.sec-01 p{
+    font-size: 0.8em;
+    max-width: 400px;
+    padding:0px 30px 30px 60px;
+    color: var(--cor1);
+}
+.botao{
+    margin:0px 10px 10px 60px;
+    background-color: var(--cordestaque);
+    padding: 15px;
+    color: var(--cor1);
+    font-weight: 700;
+    border:none;
+}
+.botao:hover{
+    background-color:var(--corhover);
+}
+
+.sec-02 h2{
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction:column;
+
+}
+.sec-02 p{
+    padding:20px;
+    text-align: center;
+    font-size: 1em;
+    max-width: 700px;
+    margin: auto;
+}
+.container{
+    margin:0px 10px 20px 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.d-con{
+    align-items: center;
+    padding:25px;
+    max-width:400px;
+    max-height: 400px;
+    display:flex;
+    flex-direction:column;
+}
+.d-con img{
+    margin: 20px;
+    max-width: 70px;
+}
+.sec-03{
+    background-color:var(--corfundo);
+    margin:-20px;
+    
+}
+.sec-03 h2{
+    color: var(--cor1);
+}
+.sec-03 p{
+    color: var(--cor1);
+    color: var(--cortextDark);
+}
+.div-st1 img{
+    margin: 70px 20px 30px 70px;
+    display: inline;
+}
+.div-st1 h2{
+    max-width: 300px;
+    padding: 70px 0px 30px 0px;
+}
+.div-st1 p{
+    max-width: 300px;
+    padding:10px 0px 50px 0px;
+    
+}
+button.branco{
+    background-color: #fff;
+    color:var(--corfundo);
+    margin: 0px;
+    
+}
+.sec-04{
+    background-color: var(--cor1);
+}
