@@ -19,32 +19,52 @@ body{
 main{
     margin: 20px
 }
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+  }
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: var(--cor1);
+}
+.navigation a:hover {
+    color:var(--cordestaque);
+}
+.navigation a:hover{
+    color: var(--cordestaque);
+    transition: color .3s;
+} 
+@media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: left; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
 header img{
     padding: 20px;
 }
-#menu-h{
-    padding: 0px;
-    list-style: none;
-    
-} 
-#menu-h ul li{
-    display: inline;
-}
-#menu-h a{
-    margin-top: 24px;
-    padding: 10px;
-    text-decoration: none;
-    color:var(--cor1);
-    display: inline-block;
-}
-#menu-h a:hover{
-    color: var(--cordestaque);
-    transition: color .3s;
-}
-#menu-h ul li:last-child a {
-    float: right;
-    background-color: #fff;
-}
+
 .sec-01{
     height:630px;
     background-image: url('../midia/pedestrian.png');
@@ -88,6 +108,9 @@ header img{
     font-size: 1em;
     max-width: 700px;
     margin: auto;
+}
+.sec-02 h3{
+    text-align: center;
 }
 .container{
     margin:0px 10px 20px 10px;
